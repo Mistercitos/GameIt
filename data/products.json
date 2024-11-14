@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Nuevo Juego",
+    "description": "Descripción del nuevo juego",
+    "code": "GAM123",
+    "price": 19.99,
+    "status": true,
+    "stock": 200,
+    "category": "Acción",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "description": "Un juego de rol en un mundo abierto lleno de aventuras.",
+    "code": "TW3-001",
+    "price": 29.99,
+    "status": true,
+    "stock": 150,
+    "category": "RPG",
+    "thumbnails": [
+      "https://image.api.playstation.com/vulcan/ap/rnd/202211/0914/TvcIHkYqqln1RGbaFqBeuFp6.jpg",
+      "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/292030/ss_dc55eeb409d6e187456a8e159018e8da098fa468.1920x1080.jpg?t=1730212926"
+    ]
+  }
+]

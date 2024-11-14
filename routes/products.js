@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 // GET /:pid - Obtener un producto por ID
 router.get('/:pid', (req, res) => {
     const products = readData();
-    const product = products.find(p => p.id === req.params.pid);
+    const product = products.find(p => p.id === parseInt(req.params.pid)); // Cambiado a ID numérico
     product ? res.json(product) : res.status(404).json({ error: 'Producto no encontrado' });
 });
 
@@ -29,8 +29,12 @@ router.post('/', (req, res) => {
     }
 
     const products = readData();
+
+    const lastProductId = products.length > 0 ? products[products.length - 1].id : 0;
+    const newProductId = lastProductId + 1;
+
     const newProduct = {
-        id: String(Date.now()), // ID único
+        id: newProductId,
         title,
         description,
         code,
@@ -49,7 +53,7 @@ router.post('/', (req, res) => {
 // PUT /:pid - Actualizar un producto por ID
 router.put('/:pid', (req, res) => {
     const products = readData();
-    const index = products.findIndex(p => p.id === req.params.pid);
+    const index = products.findIndex(p => p.id === parseInt(req.params.pid)); // Cambiado a ID numérico
 
     if (index === -1) return res.status(404).json({ error: 'Producto no encontrado' });
 
@@ -64,7 +68,7 @@ router.put('/:pid', (req, res) => {
 // DELETE /:pid - Eliminar un producto por ID
 router.delete('/:pid', (req, res) => {
     const products = readData();
-    const filteredProducts = products.filter(p => p.id !== req.params.pid);
+    const filteredProducts = products.filter(p => p.id !== parseInt(req.params.pid)); // Cambiado a ID numérico
 
     if (products.length === filteredProducts.length) {
         return res.status(404).json({ error: 'Producto no encontrado' });
@@ -72,22 +76,6 @@ router.delete('/:pid', (req, res) => {
 
     writeData(filteredProducts);
     res.status(204).send();
-});
-
-// DELETE /no-id - Eliminar todos los productos sin ID
-router.delete('/no-id', (req, res) => {
-    const products = readData();
-    const productsWithId = products.filter(product => product.id !== undefined);
-
-    if (products.length === productsWithId.length) {
-        return res.status(404).json({ error: 'No hay productos sin ID para eliminar' });
-    }
-
-    writeData(productsWithId);
-    res.json({
-        message: 'Productos sin ID eliminados correctamente',
-        deletedCount: products.length - productsWithId.length
-    });
 });
 
 module.exports = router;

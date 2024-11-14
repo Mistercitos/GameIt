@@ -1,15 +1,14 @@
 [
   {
-    "title": "Nuevo Juego",
-    "description": "Descripción del nuevo juego",
-    "code": "GAM123",
-    "price": 19.99,
+    "title": "DOOM Eternal",
+    "description": "Shooter en primera persona de acción rápida.",
+    "code": "DOOM-003",
+    "price": 2499,
     "status": true,
     "stock": 200,
-    "category": "Acción",
+    "category": "Shooter",
     "thumbnails": [
-      "imagen1.jpg",
-      "imagen2.jpg"
+      "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/SjdYof2sVBaY7YENVbNN4iaf.png"
     ]
   },
   {
@@ -21,8 +20,124 @@
     "stock": 150,
     "category": "RPG",
     "thumbnails": [
-      "https://image.api.playstation.com/vulcan/ap/rnd/202211/0914/TvcIHkYqqln1RGbaFqBeuFp6.jpg",
-      "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/292030/ss_dc55eeb409d6e187456a8e159018e8da098fa468.1920x1080.jpg?t=1730212926"
+      "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/SjdYof2sVBaY7YENVbNN4iaf.png"
+    ]
+  },
+  {
+    "id": "1731607192145",
+    "title": "Cyberpunk 2077",
+    "description": "Un juego de rol futurista en un mundo abierto.",
+    "code": "CP2077-001",
+    "price": 59.99,
+    "status": true,
+    "stock": 100,
+    "category": "RPG",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607215415",
+    "title": "Red Dead Redemption 2",
+    "description": "Juego de acción y aventuras en el Salvaje Oeste.",
+    "code": "RDR2-001",
+    "price": 39.99,
+    "status": true,
+    "stock": 200,
+    "category": "Acción",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607227792",
+    "title": "Dark Souls III",
+    "description": "Juego de rol de acción con una dificultad elevada.",
+    "code": "DS3-001",
+    "price": 19.99,
+    "status": true,
+    "stock": 80,
+    "category": "RPG",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607239555",
+    "title": "Grand Theft Auto V",
+    "description": "Juego de acción en mundo abierto.",
+    "code": "GTA5-001",
+    "price": 29.99,
+    "status": true,
+    "stock": 300,
+    "category": "Acción",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607248006",
+    "title": "Assassin's Creed Valhalla",
+    "description": "Un juego de aventuras de mundo abierto en la época vikinga.",
+    "code": "ACV-001",
+    "price": 49.99,
+    "status": true,
+    "stock": 120,
+    "category": "Aventura",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607261592",
+    "title": "FIFA 23",
+    "description": "Simulador de fútbol con los mejores equipos y ligas.",
+    "code": "FIFA23-001",
+    "price": 59.99,
+    "status": true,
+    "stock": 250,
+    "category": "Deportes",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607273735",
+    "title": "Call of Duty: Modern Warfare II",
+    "description": "Juego de disparos en primera persona con modo multijugador.",
+    "code": "CODMW2-001",
+    "price": 69.99,
+    "status": true,
+    "stock": 180,
+    "category": "Disparos",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607299784",
+    "title": "Minecraft",
+    "description": "Un juego de construcción en un mundo abierto.",
+    "code": "MC-001",
+    "price": 26.99,
+    "status": true,
+    "stock": 500,
+    "category": "Aventura",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
+    ]
+  },
+  {
+    "id": "1731607310156",
+    "title": "Overwatch 2",
+    "description": "Juego de disparos en primera persona con héroes y habilidades únicas.",
+    "code": "OW2-001",
+    "price": 39.99,
+    "status": true,
+    "stock": 140,
+    "category": "Disparos",
+    "thumbnails": [
+      "https://image.example.com/doom_eternal.jpg"
     ]
   }
 ]
